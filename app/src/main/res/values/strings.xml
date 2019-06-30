@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Kamaau</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_video">Activity</string>
+
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="initial_ad_video_load">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="rewarded_video">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="title_activity_social">Social</string>
+    <string name="title_activity_rewards">Rewards</string>
+    <string name="title_activity_payout">Payout</string>
+    <string name="title_activity_transaction">Transaction</string>
+    <string name="title_activity_profile_view">Profile</string>
+
+    <string name="login">LOGIN</string>
+    <string name="agree">I agree to the</string>
+    <string name="terms">terms &amp; conditions</string>
+    <string name="using">for using this app .</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="your_referr">Your Referral code</string>
+    <string name="activity">Activity</string>
+    <string name="feedback">Feedback</string>
+    <string name="home">Home</string>
+    <string name="followers">Followers</string>
+    <string name="rewards">Rewards</string>
+    <string name="profile">Profile</string>
+    <string name="payout">Payout</string>
+    <string name="share">Share &amp; Earn</string>
+
+
+</resources>

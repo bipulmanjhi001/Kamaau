@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.larvaesoft.kamaau.Activity.Payout"
+    tools:showIn="@layout/app_bar_payout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/add_bank_account"
+            android:layout_width="match_parent"
+            android:background="@drawable/add_bank"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Add Bank"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/show_paytm"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/add_bank"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/paytm"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/show_paypal"
+                android:layout_weight="1"
+                android:background="@drawable/add_bank"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@drawable/paypal"
+                    android:layout_margin="4dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bank_account_form"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#423f42"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/holder_name"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_accountholder_icon"
+                android:drawableStart="@drawable/ic_accountholder_icon"
+                android:hint="Account Holder Name"
+                android:padding="10dp"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:inputType="textPersonName"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/account_number"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_ac_number"
+                android:drawableStart="@drawable/ic_ac_number"
+                android:hint="Account Number"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColorHint="@color/gray"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/ifsc_code"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_ifsc_icon"
+                android:drawableStart="@drawable/ic_ifsc_icon"
+                android:hint="IFSC Code"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:inputType="text"
+                android:textColorHint="@color/gray"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/save_bank_account"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/social_button_background"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="SAVE"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paypal_active"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="#423f42"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/paypal_mail_id"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_mail_icon"
+                android:drawableStart="@drawable/ic_mail_icon"
+                android:hint="Mail ID"
+                android:padding="10dp"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:inputType="textEmailAddress"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/social_button_background"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="SAVE"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/paytm_active"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="#423f42"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/paytm_contact"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_phone_icon"
+                android:drawableStart="@drawable/ic_phone_icon"
+                android:hint="Mobile No"
+                android:padding="10dp"
+                android:imeOptions="actionNext"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray"
+                android:inputType="phone"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/social_button_background"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="SAVE"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

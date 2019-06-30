@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:background="@drawable/bg"
+   app:layout_behavior="@string/appbar_scrolling_view_behavior"
+   tools:showIn="@layout/app_bar_dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <com.shinelw.library.ColorArcProgressBar
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/bar2"
+            app:is_need_content="true"
+            app:front_color1="#69cbd2"
+            app:front_color2="#7eb6e2"
+            app:front_color3="#989df7"
+            app:max_value="100"
+            app:total_engle="360"
+            app:back_width="2dp"
+            app:front_width="10dp"
+            app:is_need_title="true"
+            app:string_title="COMPLETED"
+            app:back_color="@android:color/white"
+            android:layout_marginBottom="50dp" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "701779370946",
+    "firebase_url": "https://kamaau-29a34.firebaseio.com",
+    "project_id": "kamaau-29a34",
+    "storage_bucket": "kamaau-29a34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701779370946:android:d71c77f0f731026c",
+        "android_client_info": {
+          "package_name": "com.larvaesoft.kamaau"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701779370946-vsv4mc05usetadp5pn8gnaq6g6gag6fa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.larvaesoft.kamaau",
+            "certificate_hash": "5f26679b58509023aa5ccb121feca0d805a64279"
+          }
+        },
+        {
+          "client_id": "701779370946-8u6fnqjmnm8kscc6segjgm1us7nhho0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.larvaesoft.kamaau",
+            "certificate_hash": "126aff66f181822c7b790e453d474e7008ee7426"
+          }
+        },
+        {
+          "client_id": "701779370946-f8ggqdh13eo0m62cb0snhkv73jl7vup9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOr8YA-tRTzaOH-uj_K_fOcdyKpYhUTsM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701779370946-f8ggqdh13eo0m62cb0snhkv73jl7vup9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_video">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/video_container"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/green"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="2.5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:id="@+id/watched_videos"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_show"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="Watch Video"
+                android:textSize="18dp"
+                android:textColor="@color/colorAccent"
+                android:background="@color/green"
+                android:layout_height="80dp" />
+
+            <LinearLayout
+                android:layout_weight="2.5"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:id="@+id/watching_videos"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

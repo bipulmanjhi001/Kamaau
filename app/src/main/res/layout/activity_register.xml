@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context="com.larvaesoft.kamaau.Activity.RegisterActivity">
+
+    <include layout="@layout/content_register" />
+
+    <com.larvaesoft.kamaau.model.FooterBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_bg"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/register_proceed"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="CREATE"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </com.larvaesoft.kamaau.model.FooterBarLayout>
+</android.support.design.widget.CoordinatorLayout>
